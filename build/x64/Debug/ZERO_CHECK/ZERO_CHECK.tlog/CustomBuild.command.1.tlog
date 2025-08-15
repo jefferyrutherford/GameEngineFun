@@ -1,0 +1,10 @@
+^E:\PROJECTS\GAMEENGINEFUN\BUILD\CMAKEFILES\722E41CFCF9683CF4E3B1EC16F2E189D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SE:/Projects/GameEngineFun -BE:/Projects/GameEngineFun/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file E:/Projects/GameEngineFun/build/GameEngineFun.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
