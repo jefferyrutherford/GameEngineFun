@@ -1,3 +1,0 @@
-E:/Projects/GameEngineFun/build/CMakeFiles/GameEngineFun.dir
-E:/Projects/GameEngineFun/build/CMakeFiles/ALL_BUILD.dir
-E:/Projects/GameEngineFun/build/CMakeFiles/ZERO_CHECK.dir
