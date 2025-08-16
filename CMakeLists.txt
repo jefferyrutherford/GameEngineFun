@@ -3,19 +3,21 @@ project(GameEngineFun LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 20)
 
-# Tell CMake to find GLFW installed by vcpkg
-find_package(glfw3 CONFIG REQUIRED)
-find_package(glad CONFIG REQUIRED)
-
-#include the include directory, my life is complete
+# Include project headers
 include_directories(${CMAKE_SOURCE_DIR}/include)
+include_directories(${CMAKE_SOURCE_DIR}/libs/glad/include)
 
-add_executable(GameEngineFun 
+# Add GLFW subdirectory
+add_subdirectory(libs/glfw)
+
+# Add executable
+add_executable(GameEngineFun
     main.cpp
     Player.cpp
+    libs/glad/src/glad.c
 )
 
+# Link libraries
 target_link_libraries(GameEngineFun PRIVATE glfw)
 target_link_libraries(GameEngineFun PRIVATE opengl32)
-target_link_libraries(GameEngineFun PRIVATE glad::glad)
 
