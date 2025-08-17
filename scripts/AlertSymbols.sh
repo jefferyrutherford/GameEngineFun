@@ -1,0 +1,10 @@
+# scripts/colors.sh
+GREEN="\033[32m"
+RED="\033[31m"
+YELLOW="\033[33m"
+RESET="\033[0m"
+
+CHECK="${GREEN}\u2713${RESET}"
+CROSS="${RED}\u2717${RESET}"
+INFO="${YELLOW}[INFO]${RESET}"
+
